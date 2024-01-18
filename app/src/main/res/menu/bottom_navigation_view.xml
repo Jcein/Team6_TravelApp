@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_home"
+        android:icon="@drawable/ic_tours"
+        android:checked="true"
+        android:enabled="true"
+        android:title="@string/tours" />
+<!--A42064 : bỏ giao diện category, thay giao diện favorite = yourtour   -->
+<!--    <item-->
+<!--        android:id="@+id/action_category"-->
+<!--        android:enabled="true"-->
+<!--        android:icon="@drawable/ic_category"-->
+<!--        android:title="@string/category"-->
+<!--        />-->
+    <item
+        android:id="@+id/action_cart"
+        android:enabled="true"
+        android:icon="@drawable/ic_storage"
+        android:title="@string/storage" />
+    <item
+        android:id="@+id/action_your_tour"
+        android:enabled="true"
+        android:icon="@drawable/ic_your_tour"
+        android:title="@string/your_tour" />
+    <item
+        android:id="@+id/action_profile"
+        android:enabled="true"
+        android:icon="@drawable/ic_profile"
+        android:title="@string/profile" />
+</menu>
