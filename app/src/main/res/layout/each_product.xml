@@ -4,10 +4,10 @@
     <data>
         <variable
             name="product"
-            type="com.ahmetozaydin.ecommerceapp.model.Product" />
+            type="com.team6.travel_app.model.Product" />
         <variable
             name="adapter"
-            type="com.ahmetozaydin.ecommerceapp.adapter.ProductsAdapter" />
+            type="com.team6.travel_app.adapter.ProductsAdapter" />
 
     </data>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"

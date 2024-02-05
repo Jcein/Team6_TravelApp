@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.ahmetozaydin.ecommerceapp">
+    package="com.team6.travel_app">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.VIBRATE" />
@@ -18,21 +18,21 @@
         android:theme="@style/Theme.Ecommerceapp"
         tools:targetApi="31">
         <activity
-            android:name=".view.CategoryActivity"
+            android:name="com.team6.travel_app.view.CategoryActivity"
             android:exported="false" >
         </activity>
         <activity
             android:theme="@style/Theme.Ecommerceapp.NoActionBar"
-            android:name=".view.ProductDetailsActivity"
+            android:name="com.team6.travel_app.view.ProductDetailsActivity"
             android:exported="true" />
         <activity
             android:theme="@style/SplashScreenTheme"
-            android:name=".view.LogInActivity"
+            android:name="com.team6.travel_app.view.LogInActivity"
             android:exported="true" >
         </activity>
         <activity
             android:theme="@style/Theme.Ecommerceapp.NoActionBar"
-            android:name=".view.MainActivity"
+            android:name="com.team6.travel_app.view.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

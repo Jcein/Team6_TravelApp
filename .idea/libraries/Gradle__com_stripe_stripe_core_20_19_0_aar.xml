@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.stripe:stripe-core:20.19.0@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/90403e1f0e8d78d0dbc77488344789a9/transformed/stripe-core-20.19.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/90403e1f0e8d78d0dbc77488344789a9/transformed/stripe-core-20.19.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/90403e1f0e8d78d0dbc77488344789a9/transformed/stripe-core-20.19.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/30c8fe7ec462a70a3af5f479e8be208d/transformed/stripe-core-20.19.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/30c8fe7ec462a70a3af5f479e8be208d/transformed/stripe-core-20.19.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/30c8fe7ec462a70a3af5f479e8be208d/transformed/stripe-core-20.19.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

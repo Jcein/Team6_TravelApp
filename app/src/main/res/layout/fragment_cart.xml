@@ -3,10 +3,10 @@
     <data>
         <variable
             name="fragment"
-            type="com.ahmetozaydin.ecommerceapp.fragment.CartFragment" />
+            type="com.team6.travel_app.fragment.CartFragment" />
         <variable
             name="adapter"
-            type="com.ahmetozaydin.ecommerceapp.adapter.CartAdapter" />
+            type="com.team6.travel_app.adapter.CartAdapter" />
 
     </data>
 <androidx.constraintlayout.widget.ConstraintLayout
@@ -89,6 +89,7 @@
             android:textSize="16sp"
             android:fontFamily="sans-serif"
             android:textStyle="bold"
+            android:textColor="@color/team6_color"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -117,13 +118,13 @@
             android:layout_marginEnd="6dp"
             android:layout_gravity="center"
             android:background="@drawable/ripple"
-            android:backgroundTint="@color/orange"
+            android:backgroundTint="@color/team6_color"
             android:fontFamily="sans-serif-thin"
             android:textStyle="bold"
             android:onClick="@{()-> fragment.checkOutProducts()}"
             android:text="@string/purchase"
             android:textAllCaps="false"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

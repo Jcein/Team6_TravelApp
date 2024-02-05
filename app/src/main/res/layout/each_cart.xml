@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <data>
         <variable
             name="product"
-            type="com.ahmetozaydin.ecommerceapp.data.Cart" />
+            type="com.team6.travel_app.data.Cart" />
         <variable
             name="adapter"
-            type="com.ahmetozaydin.ecommerceapp.adapter.CartAdapter" />
+            type="com.team6.travel_app.adapter.CartAdapter" />
         <variable
             name="viewModel"
-            type="com.ahmetozaydin.ecommerceapp.viewmodel.CartViewModel" />
+            type="com.team6.travel_app.viewmodel.CartViewModel" />
     </data>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.cardview.widget.CardView
     android:id="@+id/cardView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -73,59 +73,84 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:text="@{`$`+String.valueOf(product.price*product.quantity)}"
-                android:textColor="@color/green"
+                android:text="@{String.valueOf(product.price*product.quantity)+` đ`}"
+                android:textColor="@color/team6_color"
                 android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+
         <LinearLayout
-            android:layout_margin="8dp"
-            android:layout_alignParentEnd="true"
-            android:layout_below="@id/constraintLayout"
             android:id="@+id/productQuantityContainer"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_below="@id/constraintLayout"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp">
+
             <ImageView
                 android:id="@+id/productQuantityMinus"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
                 android:padding="2dp"
-                android:layout_margin="5dp"
-                android:layout_width="wrap_content"
-                android:layout_gravity="center"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_minus"
-                />
+                android:src="@drawable/ic_t6minus" />
+
             <EditText
-                android:maxLines="1"
-                android:layout_margin="5dp"
                 android:id="@+id/productQuantityEditText"
-                android:background="@drawable/product_quantity_container"
-                android:layout_gravity="center"
-                android:textStyle="bold"
-                android:textAlignment="center"
-                android:text="@{String.valueOf(product.quantity)}"
-                android:clickable="false"
-                android:focusable="false"
                 android:layout_width="38dp"
                 android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/product_quantity_container"
+                android:clickable="false"
+                android:focusable="false"
+                android:maxLines="1"
+                android:text="@{String.valueOf(product.quantity)}"
+                android:textAlignment="center"
+                android:textStyle="bold"
 
                 />
 
             <ImageView
                 android:id="@+id/productQuantityPlus"
-                android:padding="2dp"
-                android:layout_margin="5dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:layout_gravity="center"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_plus"
-                 />
+                android:layout_margin="5dp"
+                android:padding="2dp"
+                android:src="@drawable/ic_t6plus" />
 
 
         </LinearLayout>
 
+        <LinearLayout
+            android:id="@+id/productQuantityText"
+            android:layout_width="121dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/constraintLayout"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="165dp">
+
+            <TextView
+                android:id="@+id/QuantityText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Số người tham gia:"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+
+        </LinearLayout>
 
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

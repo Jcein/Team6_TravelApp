@@ -9,7 +9,7 @@ android {
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.ahmetozaydin.ecommerceapp"
+        applicationId "com.team6.travel_app"
         minSdk 24
         targetSdk 33
         versionCode 1
