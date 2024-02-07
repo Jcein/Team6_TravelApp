@@ -41,8 +41,8 @@ ProductDetailsActivity : AppCompatActivity() {
         }
         binding.apply {
             textViewProductDescription.text = products?.description
-            ("Stock: " + products?.stock.toString()).also { textViewProductFeatures.text = it }
-            ("$" + products?.price.toString()).also { textViewProductPrice.text = it }
+            ("Số lượt đăng ký còn lại: " + products?.stock.toString()).also { textViewProductFeatures.text = it }
+            (products?.price.toString()+" đ").also { textViewProductPrice.text = it }
             textViewProductName.text = products?.title
             ratingBar.rating = products?.rating!!.toString().toFloat()
             binding.backButton.setOnClickListener {

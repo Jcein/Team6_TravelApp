@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ecommerceapp.iml" filepath="$PROJECT_DIR$/.idea/modules/ecommerceapp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ecommerceapp.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ecommerceapp.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ecommerceapp.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ecommerceapp.app.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ecommerceapp.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ecommerceapp.app.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ecommerceapp.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ecommerceapp.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/travel_app.iml" filepath="$PROJECT_DIR$/.idea/modules/travel_app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/travel_app.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/travel_app.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/travel_app.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/travel_app.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/travel_app.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/travel_app.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/travel_app.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/travel_app.app.unitTest.iml" />
     </modules>
   </component>
 </project>

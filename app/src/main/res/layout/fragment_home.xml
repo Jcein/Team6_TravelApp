@@ -5,20 +5,29 @@
     android:layout_height="match_parent"
     android:animateLayoutChanges="true">
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="235dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/preview_pic" />
+
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/collapsingToolBarLayout"
         android:layout_width="match_parent"
-        android:scaleY="0.8"
-        android:scaleX="0.8"
         android:layout_height="?attr/actionBarSize"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginEnd="2dp"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="248dp"
+        android:layout_marginEnd="4dp"
         android:layout_marginBottom="2dp"
         android:animateLayoutChanges="true"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
         app:contentInsetStart="0dp"
         app:contentInsetStartWithNavigation="0dp"
         app:logoScaleType="centerCrop"
@@ -31,14 +40,18 @@
             android:background="@drawable/selector_search_view"
             android:iconifiedByDefault="false"
             android:queryHint="@string/search_for_product"
-            android:searchHintIcon="@drawable/ic_category" />
+            android:searchHintIcon="@drawable/ic_category">
+
+        </SearchView>
     </com.google.android.material.appbar.MaterialToolbar>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="385dp"
         android:layout_below="@+id/collapsingToolBarLayout"
         android:layout_alignParentBottom="true"
+        android:layout_marginTop="24dp"
         android:scrollbarSize="3dp"
         android:scrollbars="vertical"
         app:layout_scrollFlags="scroll" />
@@ -46,11 +59,13 @@
     <LinearLayout
         android:id="@+id/linearLayoutEmptySearchMessage"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="384dp"
         android:layout_alignTop="@id/recyclerView"
         android:layout_alignBottom="@id/recyclerView"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
+        android:layout_marginTop="-2dp"
+        android:layout_marginEnd="0dp"
         android:gravity="center"
         android:visibility="invisible">
 

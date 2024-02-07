@@ -102,9 +102,9 @@
             android:fontFamily="sans-serif"
             android:paddingStart="1dp"
             android:paddingEnd="1dp"
-            android:text="@{`$`+String.valueOf(product.price)}"
+            android:text="@{String.valueOf(product.price)+` đ`}"
             android:textAlignment="center"
-            android:textColor="@color/green"
+            android:textColor="@color/team6_color"
             android:textSize="12sp" />
 
         <androidx.appcompat.widget.AppCompatButton
@@ -117,7 +117,7 @@
             android:layout_marginTop="6dp"
             android:layout_marginBottom="6dp"
             android:background="@drawable/ripple"
-            android:backgroundTint="@color/orange"
+            android:backgroundTint="@color/team6_color"
             android:fontFamily="sans-serif"
             android:insetTop="0dp"
             android:insetBottom="0dp"

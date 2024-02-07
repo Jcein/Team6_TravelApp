@@ -31,7 +31,7 @@
             android:id="@+id/backButton"
             android:layout_marginTop="8dp"
             android:layout_marginStart="8dp"
-            app:backgroundTint="@color/dark_orange"
+            app:backgroundTint="@color/team6_color"
             android:background="@drawable/ripple"
             android:insetLeft="0dp"
             android:insetTop="0dp"
@@ -128,7 +128,7 @@
             android:insetTop="0dp"
             android:insetBottom="0dp"
             android:isIndicator="true"
-            android:progressTint="@color/orange"
+            android:progressTint="@color/team6_color"
             android:scaleX="0.4"
             android:scaleY="0.4"
             android:stepSize="0.2"
@@ -157,7 +157,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/textViewProductFeatures"
-            android:layout_marginTop="6dp"
+            android:layout_marginTop="12dp"
 
             android:layout_marginBottom="6dp"
             android:drawablePadding="2dp"
@@ -165,7 +165,7 @@
             android:paddingStart="1dp"
             android:paddingEnd="1dp"
             android:textAlignment="center"
-            android:textColor="@color/green"
+            android:textColor="@color/team6_color"
             android:textSize="14sp" />
 
         <androidx.appcompat.widget.AppCompatButton
@@ -178,7 +178,7 @@
             android:layout_marginTop="6dp"
             android:layout_marginBottom="6dp"
             android:background="@drawable/ripple"
-            android:backgroundTint="@color/dark_orange"
+            android:backgroundTint="@color/team6_color"
             android:fontFamily="sans-serif"
             android:paddingLeft="30dp"
             android:paddingTop="-55dp"

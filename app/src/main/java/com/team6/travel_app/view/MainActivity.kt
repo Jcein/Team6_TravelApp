@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var connectivityObserver: ConnectivityObserver
 
     companion object {
-        const val BASE_URL = "http://nguyenvantuanolivas.mooo.com/api/products"
+        const val BASE_URL = "http://nguyenvantuanolivas.mooo.com/p_api/"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
