@@ -114,10 +114,11 @@ class FavoriteFragment : Fragment() , FavoriteAdapter.Listener{
         })
     }
 
+    //hàm xoá khỏi favor
     private fun deleteButton(position: Int): SwipeHelper.UnderlayButton {
         return SwipeHelper.UnderlayButton(
             requireContext(),
-            "Delete",
+            "Huỷ chuyến",
             14.0f,
             android.R.color.holo_red_light,
             object : SwipeHelper.UnderlayButtonClickListener {
@@ -131,6 +132,7 @@ class FavoriteFragment : Fragment() , FavoriteAdapter.Listener{
             })
     }
 
+    // hàm thêm giỏ hàng
     private fun addToCartButton(position: Int): SwipeHelper.UnderlayButton {
         return SwipeHelper.UnderlayButton(
             requireContext(),
@@ -147,6 +149,7 @@ class FavoriteFragment : Fragment() , FavoriteAdapter.Listener{
             })
     }
 
+    // mở thông tin từng tour
     override fun onItemClick(products: Product) {
         favoriteList.forEach {
             if(it.id == products.id){

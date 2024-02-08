@@ -61,7 +61,7 @@ class CategorizedProduct(
             .error(R.drawable.ic_launcher_foreground)
             .into(holder.binding.imageOfProduct)
         holder.binding.textViewProductName.text =  products[position].title
-        ("$"+products[position].price.toString()).also { holder.binding.textViewProductPrice.text = it }
+        (products[position].price.toString()+" đ").also { holder.binding.textViewProductPrice.text = it }
         holder.itemView.setOnClickListener {
             val intent = Intent(context,ProductDetailsActivity::class.java)
             intent.putExtra("product",products[position])

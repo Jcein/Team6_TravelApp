@@ -26,6 +26,7 @@
           <stringArguments>
             <stringArg name="classpath">
               <args>
+                <arg>$MODULE_DIR$/../../../app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/b2d05bb18e9971311af5a7f95eaa7bd5/transformed/databinding-runtime-7.4.2-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/7200afe1d1444c9501bb19e6bf3effce/transformed/stripe-android-20.19.0-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/e180bd3ccbd4df9ca2ec27765732e0f0/transformed/payments-core-20.19.0-api.jar</arg>

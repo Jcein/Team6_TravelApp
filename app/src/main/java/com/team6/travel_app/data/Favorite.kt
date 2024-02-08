@@ -45,7 +45,7 @@ data class Favorite(
     val images: String? = null,
     @SerializedName("isChecked")
     @ColumnInfo(name = "isChecked")
-    val isChecked: Boolean, // TODO change here to BOOLEAN
+    val isChecked: Boolean,
     @PrimaryKey(autoGenerate = true)
     var uuid: Int = 0
 ) : Parcelable

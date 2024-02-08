@@ -80,7 +80,8 @@ class ProductsAdapter(
                             )
                         )
                         println(cartDatabase?.cartDao()?.getAllEntities())
-                    } else {
+                    }
+                    else {
                         //DELETE
                         println("DELETE")
                         cartDatabase?.cartDao()?.delete(holder.absoluteAdapterPosition.plus(1))
