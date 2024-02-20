@@ -1,6 +1,7 @@
-package com.ahmetozaydin.ecommerceapp.model
+package com.team6.travel_app.model
 
 import android.os.Parcelable
+import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
 import kotlinx.parcelize.Parcelize
 
@@ -24,5 +25,12 @@ data class Product(
     @SerializedName("brand") val brand: String? = null,
     @SerializedName("category") val category: String? = null,
     @SerializedName("thumbnail") val thumbnail: String? = null,
-    @SerializedName("images") val images: List<String>? = null
+    @SerializedName("images") val images: List<String>? = null,
+) : Parcelable
+@Parcelize
+data class Comments(
+    @SerializedName("id") val id: Int? = null,
+    @SerializedName("comment_text") val commentText: String? = null,
+    @SerializedName("product_id") val productId: Int? = null,
+    @SerializedName("cust_id") val custId: String? = null,
 ) : Parcelable
