@@ -22,6 +22,8 @@ class ProfileFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
+    private lateinit var textView: TextView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -34,8 +36,11 @@ class ProfileFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile, container, false)
+        val view = inflater.inflate(R.layout.fragment_profile, container, false)
+        textView = view.findViewById(R.id.TextviewProfile)
+        val volleyProfileFn = VolleyProfileFn()
+        volleyProfileFn.getJSONArrayObjects(requireContext(), textView)
+        return view
     }
 
     companion object {
